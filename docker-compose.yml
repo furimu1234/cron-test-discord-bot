@@ -1,0 +1,8 @@
+services:
+  test_bot:
+    build: .
+    command: uv run main.py
+    working_dir: /root/same
+    tty: true
+    env_file:
+      - ./.env
